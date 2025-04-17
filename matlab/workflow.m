@@ -16,6 +16,8 @@ metafile = fullfile(myDir,'meta.toml');
 toml_tmp = toml.read(metafile);
 META = toml.map_to_struct(toml_tmp);
 
+% TODO: If there as a stimulus, define what the stimulation file looks like and how to import it
+
 % As a principle to maximize function compatibility,
 % all sections and possible analyses will take as input the "allspks"
 % spiketime variable and the "META" metadata file
